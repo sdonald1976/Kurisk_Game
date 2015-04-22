@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ecf.internal.provider.xmpp.ui.wizards.XMPPConnectWizardPage">
+		<item value="sdonald1976@gmail.com" key="connectTextValue"/>
+		<list key="comboValues">
+			<item value="sdonald1976@gmail.com"/>
+			<item value="sdonald1976@live.com"/>
+		</list>
+	</section>
+</section>

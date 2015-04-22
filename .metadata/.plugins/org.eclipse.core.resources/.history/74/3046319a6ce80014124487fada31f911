@@ -1,0 +1,75 @@
+public class Combat {
+	public Creature _player;
+	public Creature _monster;
+	
+    public Combat(Creature _sentPlayer)
+    {
+        _player = _sentPlayer;
+        Fight();
+    }
+    public Combat(Creature _sentPlayer, Creature _sentMonster)
+    {
+        _player = _sentPlayer;
+        _monster = _sentMonster;
+        Fight();
+    }
+	public static String getThisInfo() {
+		String stagin = Staging.getValue();
+		System.out.println("This is in Combat. My enemy should be " + stagin);
+		System.out.println(stagin);
+		switch (stagin) {
+			case "Kobold":
+				System.out.println("You got Kobold");
+				Creature mob = new Creature();
+				mob.setHealth(15);
+				mob.setGold(9);
+				mob.setArmor(3);
+				mob.setName("Arnie, the Kobold");
+				System.out.println(mob.Health + " " + mob.getName());
+			break;
+			case "Orc":
+				System.out.println("You got Orc");
+				Creature orc = new Creature();
+				orc.setHealth(15);
+				orc.setGold(9);
+				orc.setArmor(3);
+				orc.setName("Hanz, the Orc");
+				System.out.println(orc.Health + " " + orc.getName());
+			break;
+			case "Troll":
+				System.out.println("You got Troll");
+				Creature troll = new Creature();
+				troll.setHealth(15);
+				troll.setGold(9);
+				troll.setArmor(3);
+				troll.setName("Frederick, the Troll");
+				System.out.println(troll.Health + " " + troll.getName());
+			break;
+			case "Dragon":
+				System.out.println("You got Dragon");
+				Creature dragon = new Creature();
+				dragon.setHealth(15);
+				dragon.setGold(9);
+				dragon.setArmor(3);
+				dragon.setName("Roger, the Dragon");
+				System.out.println(dragon.Health + " " + dragon.getName());
+			break;
+		}
+		return stagin;
+		
+		
+	} // is this where I would start? 
+	public void Fight()
+	{
+	    if (_player != null && _monster != null)
+	    {
+	        while(_player.Health > 0 && _monster.Health > 0)
+	        {
+	           _monster.Health--;
+	           _player.Health--;
+	           System.out.println(_monster.getName() + " is at " + _monster.Health + " left");
+	           System.out.println(_player.getName() + " has only " + _player.Health + " health left!");
+	        }
+	    }else { System.out.println("Something fucked up."); }
+	}
+}

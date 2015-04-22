@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ecf.internal.irc.ui.wizards.IRCConnectWizardPage">
+		<item value="sdonald1976@irc.freenode.net/#eclipse" key="connectTextValue"/>
+		<list key="comboValues">
+			<item value="sdonald1976@irc.freenode.net/#eclipse"/>
+		</list>
+	</section>
+</section>
